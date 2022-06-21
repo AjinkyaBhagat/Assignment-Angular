@@ -1,10 +1,10 @@
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
+import { AdminComponent } from './admin.component';
 import { AddComponent } from './customer/add/add.component';
 
 const routes: Routes = [
-  {path:"customer",loadChildren:()=>import("./customer/customer.module").then(mod=>mod.CustomerModule)},
-  {path:"add",component:AddComponent}
+  {path: '', component:AdminComponent, children:[{path:"customer",loadChildren:()=>import("./customer/customer.module").then(mod=>mod.CustomerModule)}]},
 ];
 
 @NgModule({
