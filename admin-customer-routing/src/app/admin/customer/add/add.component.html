@@ -1,0 +1,72 @@
+<p>add works!</p>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+  <!-- <div class="container-fluid w-100 m-3"></div>
+    <div class="card btn-lg text-center" >
+        <div class="card-body bg-success ">
+          <h5 class="card-title">Customer Oprations</h5>
+          <p class="card-text">Now you can now Add or Edit customers to the list</p>
+          
+        </div>
+      </div> -->
+
+      <div class="container">
+        <h1 class="mt-5">Table</h1>
+        <div class="row">
+            <div class="col-lg-8 col-md-12">
+              <h1>Fill the Form Details</h1>
+              <form class="form"  id="form">
+                  <div class="form-group">
+                      <label for="firstname">First Name</label>
+                      <input type="text" class="form-control" id="firstname" >
+                      <span id="first" class="text-danger font-weight-bold"></span>
+                  </div>    
+                  <div class="form-group">
+                      <label for="lastname">Last Name</label>
+                      <input type="text" class="form-control" id="lastname">
+                      <span id="last" class="text-danger font-weight-bold"></span>
+                  </div>
+                  <div class="form-group">
+                      <label for="age">Age</label>
+                      <input type="text" class="form-control" id="age">
+                      <span id="age-span" class="text-danger font-weight-bold"></span>
+                  </div>
+                  <div class="form-group">
+                      <label for="email">Email</label>
+                      <input type="text" class="form-control" id="email">
+                      <span id="email-span" class="text-danger font-weight-bold"></span>
+                  </div>
+                  <label for="select1">Country</label>
+                  <select name="select1" id="select1" class="form-control form-select form-control-lg" onclick="populate(this.id,'select2')">
+                      <option value="" selected>Choose country</option>
+                      <option value="india">India</option>
+                      <option value="canada">Canada</option>
+                  </select>
+                  <label for="select2">State</label>
+                  <select name="select2" id="select2" class="form-control  form-select form-control-lg" onclick="populate2(this.id,'select3')">
+                      <option value="">Choose State</option>
+                  </select>
+                  <label for="select3">City</label>
+                  <select name="select3" id="select3" class="form-control form-select form-control-lg">
+                      <option value="">Choose City</option>
+                  </select>
+                  <!-- <button type="button" class="btn btn-primary btn-lg mt-3 m-3" id="btn" onclick="validation();addtotable()">ADD</button>
+                  <button type="button" class="btn btn-primary btn-lg mt-3 m-3"  id="btn">Edit</button>
+                  <button type="button" class="btn btn-primary btn-lg mt-3 m-3"  id="btn">Delete</button> -->
+                  <a class="btn btn-primary m-3" routerLink="../list">ADD</a>
+                  <a class="btn btn-primary" routerLink="">Back</a>
+              </form>
+            </div>
+        </div>
+</div>    
+</body>
+</html>
+
+<router-outlet></router-outlet>
