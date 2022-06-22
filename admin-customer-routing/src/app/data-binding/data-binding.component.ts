@@ -7,6 +7,7 @@ import { first } from 'rxjs';
   styleUrls: ['./data-binding.component.scss']
 })
 export class DataBindingComponent implements OnInit {
+  image='../.././assets/header.png';
   age:any;
   showAge:any;
   allData={
@@ -17,6 +18,7 @@ export class DataBindingComponent implements OnInit {
   }
   red:string='red';
   blue:string='blue';
+  
 
   ageCalculator(){
     if(this.age){
